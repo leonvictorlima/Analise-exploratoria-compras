@@ -17,24 +17,22 @@ Espero que possa ser útil e um guia no aprendizado em análise de dados.
 Tabela de conteúdos
 =================
 <!--ts-->
-   * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
+   * [Objetivo](#objetivo)
+   * [Carregando os dados e Avaliando](#carregando-dados)
+   * [Análise de compras](#analise-compras)
+      * [Informações demográficas por gênero](#demografico-genero)
+      * [Análise de compra por gênero](#compra-genero)
+      * [Análise demográfica](#demografico)
+      * [Top gastadores](#gastadores)
+      * [Itens mais populares](#populares)
+      * [Itens mais lucrativos](#lucrativos)
+   * [Conclusão](#conclusao)
 <!--te-->
-
 1. [ Description. ](#desc)
 2. [ Usage tips. ](#usage)
 
-<a name="desc"></a>
-## 1. Description
+<a name="objetivo"></a>
+## Objetivo
 
 sometext
 
