@@ -1,0 +1,1 @@
+Este é o dataset trabalhado na analise exploratória de compras utiliando python. 
