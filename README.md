@@ -7,3 +7,15 @@ A utilidade de linguagem de programação na extração de informações relevan
 Neste exemplo, utilizamos um conjunto de dados de compras para aprender melhor sobre o perfil dos clientes, itens mais vendidos, informações demográficas por gênero, entre outros.
 
 Espero que possa ser útil e um guia no aprendizado em análise de dados.
+
+
+Tabela de conteúdos
+=================
+<p align="center">
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#roadmap">Roadmap</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#contribuicao">Contribuição</a> • 
+ <a href="#licenc-a">Licença</a> • 
+ <a href="#autor">Autor</a>
+</p>
