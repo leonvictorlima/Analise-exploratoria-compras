@@ -28,8 +28,6 @@ Tabela de conteúdos
       * [Itens mais lucrativos](#lucrativos)
    * [Conclusão](#conclusao)
 <!--te-->
-1. [ Description. ](#desc)
-2. [ Usage tips. ](#usage)
 
 <a name="objetivo"></a>
 ## Objetivo
