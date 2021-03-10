@@ -67,10 +67,24 @@ Neste momento, é realizado uma análise sobre os dados carregados. A abordagem 
 
 df.head()
 
+```
+
+<h1 align="center">
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/head.JPG"  width="500"/>
+</h1>
+
+
+```python
 # Avaliando algumas métricas: quartil, média, valores máximos e mínimos e desvio padrão;
 
 df.describe()
 
+```
+<h1 align="center">
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/describe.JPG"  width="500"/>
+</h1>
+
+```python
 infor_compradores = df.loc[:,['Sexo', 'Login', 'Idade']]
 infor_compradores.head(6)
 
@@ -113,7 +127,6 @@ resultados
 
 
 ```
-
 <a name="demografico-genero"></a>
 ## Informações demográficas por gênero
 
