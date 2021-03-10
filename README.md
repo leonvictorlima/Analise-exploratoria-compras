@@ -1,4 +1,11 @@
-# Analise-exploratoria-compras
+# Analise Exploratoria de Dados
+
+<h1 align="center">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/banner.png" />
+</h1>
+
+1_PKXC0FeXQc5LVmqhJ8HnVg.png
+
 
 Este arquivo se refere na aplicação de analise exploratória de dados utilizando a linguagem python. Este conjunto de dados foi extraído do repositório da UCI e adaptado para utilização neste exemplo.
 
