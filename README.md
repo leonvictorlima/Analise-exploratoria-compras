@@ -255,15 +255,61 @@ Diante dos dados explorados até o momento, estamos chegando ao final da nossa a
 
 E sobre as compras, abaixo temos a exibição dos itens mais populares:
 
+```python
+
+# Calculos básicos
+
+usuario_total = df.groupby(['Nome do Item']).sum()['Valor'].rename('Valor total de compra')
+usuario_media = df.groupby(['Nome do Item']).mean()['Valor'].rename('Valor médio de compra')
+usuario_contagem = df.groupby(['Nome do Item']).count()['Valor'].rename('Numero de compras')
+
+
+# Dataframe
+
+usuario_dados = pd.DataFrame({'Valor total de compra': usuario_total,
+                              'Valor médio de compra': usuario_media,
+                              'Numero de compras': usuario_contagem})
+
+# Data formatação
+
+usuario_dados['Valor total de compra'] = usuario_dados['Valor total de compra'].map('${:,.2f}'.format)
+usuario_dados['Valor médio de compra'] = usuario_dados['Valor médio de compra'].map('${:,.2f}'.format)
+usuario_dados.sort_values('Numero de compras', ascending=False).head(5)
+
+```
+
 <h1 align="center">
-  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/populares.JPG"  width="500"/>
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/populares.JPG"  width="600"/>
 </h1>
 
 <a name="lucrativos"></a>
 ## Itens mais lucrativos
 
+```python
+
+# Calculos básicos
+
+usuario_total = df.groupby(['Nome do Item']).sum()['Valor'].rename('Valor total de compras')
+usuario_media = df.groupby(['Nome do Item']).mean()['Valor'].rename('Valor médio de compra')
+usuario_contagem = df.groupby(['Nome do Item']).count()['Valor'].rename('Numero de compras')
+
+
+# Dataframe
+
+usuario_dados = pd.DataFrame({'Valor total de compras': usuario_total,
+                              'Valor médio de compra': usuario_media,
+                              'Numero de compras': usuario_contagem})
+
+# Data formatação
+
+usuario_dados['Valor total de compras'] = usuario_dados['Valor total de compras'].map('${:,.2f}'.format)
+usuario_dados['Valor médio de compra'] = usuario_dados['Valor médio de compra'].map('${:,.2f}'.format)
+usuario_dados.sort_values('Numero de compras', ascending=False).head(5)
+
+```
+
 <h1 align="center">
-  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/lucrativos.JPG"  width="500"/>
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/lucrativos.JPG"  width="600"/>
 </h1>
 
 <a name="conclusao"></a>
