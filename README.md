@@ -34,10 +34,19 @@ Tabela de conteúdos
 <a name="objetivo"></a>
 ## Objetivo
 
-sometext
+O objetivo deste módulo é efetuar análise de um conjunto de dados de clientes que efetuaram uma série de compras utilizando data munging. Esta analise poderá ser replicada em qualquer outro conjunto de dados, bem como seguir de guia para diferentes aplicações de exploração.
 
-<a name="usage"></a>
-## 2. Usage tips
+<a name="carregando-dados"></a>
+## Carregando os dados e Avaliando
 
-sometext
+Para iniciar nossa jornada, é necessário efetuar o carregamento dos dados. Os mesmo estão disposníveis neste mesmo repositório com o título "dados_compras.json". Diferente de outras abordagens mais convencionais, estes dados estão em formato javascript object notation, ou json, e portanto, será utilizado a função do pandas para seu carregamento.
+
+```python
+
+# Declarando pacotes
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+```
 
