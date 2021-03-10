@@ -94,6 +94,13 @@ infor_compradores.head(6)
 
 print (df['Item ID'].value_counts().head(10).plot(kind='bar'))
 
+```
+<h1 align="center">
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/compras.JPG"  width="500"/>
+</h1>
+
+```python
+
 #Total de Itens;
 
 total_itens = df['Nome do Item'].count()
@@ -239,16 +246,25 @@ idade_dataframe.sort_index()
 
 Diante dos dados explorados até o momento, estamos chegando ao final da nossa análise e neste âmbito, uma dos itens importantes é observar os clientes que gastam mais na efetuação de compras:
 
+<h1 align="center">
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/gastadores.JPG"  width="500"/>
+</h1>
 
 <a name="populares"></a>
 ## Itens mais populares
 
 E sobre as compras, abaixo temos a exibição dos itens mais populares:
 
+<h1 align="center">
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/populares.JPG"  width="500"/>
+</h1>
 
 <a name="lucrativos"></a>
 ## Itens mais lucrativos
 
+<h1 align="center">
+  <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/lucrativos.JPG"  width="500"/>
+</h1>
 
 <a name="conclusao"></a>
 ## Conclusão
