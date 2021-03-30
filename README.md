@@ -7,11 +7,11 @@
 ## Descrição do Projeto
 Este arquivo se refere na aplicação de analise exploratória de dados utilizando a linguagem python. Este conjunto de dados foi extraído do repositório da UCI e adaptado para utilização neste exemplo.
 
-A utilidade de linguagem de programação na extração de informações relevantes em grandes conjuntos de dados tornou-se cada vez mais útil com o seu grande volume e surgimento por causa do Big Data. A usabilidade e a aderência de suas flexibilidade como a linguagem de programação em python ou R são a chave para uma análise nesse novo e moderno mundo dos dados.
+A utilidade de linguagem de programação na extração de informações relevantes em grandes conjuntos de dados, tornou-se cada vez mais útil com o seu grande volume e surgimento por causa do Big Data. A usabilidade e a aderência de sua flexibilidade como a linguagem de programação em python ou R é a chave para uma análise nesse novo e moderno mundo dos dados.
 
-Neste exemplo, utilizamos um conjunto de dados de compras para aprender melhor sobre o perfil dos clientes, itens mais vendidos, informações demográficas por gênero, entre outros.
+Neste exemplo, utilizamos um conjunto de dados de compras para aprendermos melhor sobre o perfil dos clientes, itens mais vendidos, informações demográficas por gênero, entre outros.
 
-Espero que possa ser útil e um guia no aprendizado em análise de dados.
+Espero que possa ser útil e um guia para o aprendizado em análise de dados.
 
 
 Tabela de conteúdos
@@ -37,7 +37,7 @@ O objetivo deste módulo é efetuar análise de um conjunto de dados de clientes
 <a name="carregando-dados"></a>
 ## Carregando os dados
 
-Para iniciar nossa jornada, é necessário efetuar o carregamento dos dados. Os mesmo estão disposníveis neste mesmo repositório com o título "dados_compras.json". Diferente de outras abordagens mais convencionais, estes dados estão em formato javascript object notation, ou json, e portanto, será utilizado a função do pandas para seu carregamento.
+Para iniciar nossa jornada, é necessário efetuar o carregamento dos dados. Os mesmo estão disponíveis neste mesmo repositório com o título "dados_compras.json". Diferente de outras abordagens mais convencionais, estes dados estão em formato "javascript object notation", ou "json", e portanto, será utilizado a função do pandas para seu carregamento.
 
 ```python
 
@@ -56,7 +56,7 @@ df = pd.read_json('dados_compras.json', orient='records')
 <a name="analise-compras"></a>
 ## Análise de compras
 
-Neste momento, é realizado uma análise sobre os dados carregados. A abordagem aqui é entender como estão distribuídos, os tipos de dados, suas variáveis, entre outros insights iniciais.
+Neste momento, é realizado uma análise sobre os dados carregados. A abordagem aqui é entender: Como estão os dados estão distribuídos? Quais tipos de dados neste conjunto? Entre outros insights iniciais.
 
 
 ```python
@@ -135,7 +135,7 @@ resultados
 <a name="demografico-genero"></a>
 ## Informações demográficas por gênero
 
-Aqui se inicia uma extração de valor maior dos dados. As informações por gênero é um fator importante para compreendermos os público de compras. A disponibilidade de certos produtos e sua produção leva em conta o público para o qual é direcionado. E qual o gênero que efetuam mais compras em nosso projeto?
+Aqui se inicia uma extração de valor maior dos dados. As informações por gênero é um fator importante para compreendermos o público de compras. A disponibilidade de certos produtos e sua produção leva em conta o público para o qual é direcionado. Uma ótima pergunta é: Qual o gênero que efetuam mais compras em nosso projeto?
 
 ```python
 # Número de compradores por gênero e porcentagem
@@ -164,7 +164,7 @@ compradores_dados
 <a name="compra-genero"></a>
 ## Análise de compra por gênero
 
-Como relatado anteriomente, é importante uma avaliação em nossos dados sobre quais itens são mais buscados pelos nossos clientes e uma divisão sobre estes items mais buscados por gênero é de extremo valor. Os itens que são mais vendidos por gênero, a média de pagamento por item e o total geral. 
+Como relatado anteriomente, é importante uma avaliação em nossos dados sobre quais itens são mais buscados pelos nossos clientes, e uma divisão sobre estes items mais buscados por gênero é de extremo valor. Deste modo, analisaremos os itens que são mais vendidos por gênero, a média de pagamento por item e o total geral. 
 
 ```python
 # Criando as tabelas
@@ -203,7 +203,7 @@ analise_genero
 <a name="demografico"></a>
 ## Análise demográfica
 
-Como não pensar em uma análise demográfica? Isto é um dos pontos mais relevantes e que muitas vezes não é levado em consideração em uma análise. Simples avaliações, fazem total diferença. Neste tópico, observamos que a média de idades está entre o range de 20 à 24 anos. Outras informações são observadas abaixo:
+Como não pensar em uma análise demográfica? Isto é um dos pontos mais relevantes e que muitas vezes não é levado em consideração em uma análise neste perfil. Simples avaliações fazem total diferença. Neste tópico, observamos que a média de idades está entre o range de 20 à 24 anos. Outras informações também são observadas.
 
 ```python
 # Cálculo de idade básico
@@ -242,7 +242,7 @@ idade_dataframe.sort_index()
 <a name="gastadores"></a>
 ## Top gastadores
 
-Diante dos dados explorados até o momento, estamos chegando ao final da nossa análise e neste âmbito, uma dos itens importantes é observar os clientes que gastam mais na efetuação de compras:
+Diante dos dados explorados até o momento, estamos chegando ao final da nossa análise, e neste âmbito, um fator importante é observar os clientes que gastam mais na efetuação de compras.
 
 <h1 align="center">
   <img src="https://github.com/leonvictorlima/Analise-exploratoria-compras/blob/main/imagens/gastadores.JPG"  width="500"/>
@@ -251,7 +251,7 @@ Diante dos dados explorados até o momento, estamos chegando ao final da nossa a
 <a name="populares"></a>
 ## Itens mais populares
 
-E sobre as compras, abaixo temos a exibição dos itens mais populares:
+Em relação as compras, abaixo são exibitods os itens mais populares, e em seguida, os mais lucrativos:
 
 ```python
 
@@ -313,8 +313,10 @@ usuario_dados.sort_values('Numero de compras', ascending=False).head(5)
 <a name="conclusao"></a>
 ## Conclusão
  
-Após essa curta análise dos dados, pudemos observar o comportamento dos clientes e o padrão de consumo deles. A exploração de dados é uma das tarefas mais necessárias para conhecimento de mercado e entendimento do negócio que está sendo tratado, possibilidando uma compreensão melhor dos dados que estamos trabalhando. 
+Após essa curta análise dos dados, pudemos observar o comportamento dos clientes e seu padrão de consumo. A exploração de dados é uma das tarefas mais necessárias para conhecimento de mercado e entendimento do negócio que está sendo tratado, possibilidando assim uma melhor compreensão dos mercado e do negócio que estamos trabalhando. 
 
-Espero que essa análise em python possa ser de grande valia e de guia para outras abordagens. 
+Espero que essa análise em linguagem python possa ser de grande valia e de guia para outras abordagens. 
 
 O código em íntegra está disponível no meu repositório do #github, 
+
+TKs =))!
